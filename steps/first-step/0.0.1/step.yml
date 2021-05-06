@@ -1,0 +1,52 @@
+title: First step
+summary: |
+  First step
+description: |
+  First step
+website: https://github.com/kwalter26/bitrise-step-first-step
+source_code_url: https://github.com/kwalter26/bitrise-step-first-step
+support_url: https://github.com/kwalter26/bitrise-step-first-step/issues
+published_at: 2021-05-05T23:24:30.124286-05:00
+source:
+  git: https://github.com/kwalter26/https-github.com-kwalter26-bitrise-step-first-step.git
+  commit: ddcf11a8fa458d9e9daa9b95a7fe38b209021aa9
+host_os_tags:
+- osx-10.10
+- ubuntu-16.04
+type_tags:
+- utility
+toolkit:
+  go:
+    package_name: github.com/kwalter26/bitrise-step-first-step
+deps:
+  brew:
+  - name: git
+  - name: wget
+  apt_get:
+  - name: git
+  - name: wget
+is_requires_admin_user: true
+is_always_run: false
+is_skippable: false
+run_if: ""
+inputs:
+- example_step_input: Default Value - you can leave this empty if you want to
+  opts:
+    description: |
+      Description of this input.
+
+      Can be Markdown formatted text.
+    is_expand: true
+    is_required: true
+    summary: Summary. No more than 2-3 sentences.
+    title: Example Step Input
+    value_options: []
+outputs:
+- EXAMPLE_STEP_OUTPUT: null
+  opts:
+    description: |
+      Description of this output.
+
+      Can be Markdown formatted text.
+    summary: Summary. No more than 2-3 sentences.
+    title: Example Step Output
